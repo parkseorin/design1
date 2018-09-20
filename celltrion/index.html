@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>셀트리온에오신것을환영합니다^^</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<header id="header">
+			<nav class="gnb inner">
+				<a href="index.html" class="logo">
+					<img src="./img/logo.png" alt="셀트리온">
+				</a>
+				<ul class="gnb_wrap">
+					<li class="m1">
+						<a href="about.html">
+						회사소개
+						</a>
+					</li>
+					<li class="m2">
+						<a href="bio.html">
+						바이오
+						</a>
+					</li>
+					<li class="m3">
+						<a href="products.html">
+						제품소개
+						</a>
+					</li>
+					<li class="m4">
+						<a href="rnd.html">
+						r&amp;d
+						</a>
+					</li>
+					<li class="m5">
+						<a href="ir.html">
+						ir
+						</a>
+					</li>
+					<li class="m6">
+						<a href="recruit.html">
+						인재채용
+						</a>
+						
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main id="contents">
+			<figure class="main">
+				<div class="mainTit">
+					<img src="./img/main_tit.png" alt="">
+				</div>
+				<div class="mainBtn">
+					<a href="brandstory.html" class="btn btn1">셀트리온역사</a>
+					<a href="history.html" class="btn btn2">셀트리온소개</a>
+				</div>
+				<div id="root"></div>
+				<div class="mainFrame">
+					<video src="main.mp4" loop muted autoplay width="100%"></video>
+				</div>
+			</figure>
+			<div class="business_area">
+				<div class="inner">
+					<h3 class="business_tit"><img src="./img/business_tit.png" alt=""></h3>
+					<p class="business_info">인류의 더 행복한 ‘삶’을 위한 <strong>바이오의약품</strong>의 새로운 패러다임</p>
+					<ul class="businessimg_box">
+						<li>
+							<span class="itemFrame">
+								<img src="./img/business_ico1.png" alt="">
+							</span>
+							<span class="subject">약물평가</span>
+						</li>
+						<li>
+							<span class="itemFrame">
+								<img src="./img/business_ico2.png" alt="">
+							</span>
+							<span class="subject">약품개발</span>
+						</li>
+						<li>
+							<span class="itemFrame">
+								<img src="./img/business_ico3.png" alt="">
+							</span>
+							<span class="subject">항체발굴</span>
+						</li>
+						<li>
+							<span class="itemFrame">
+								<img src="./img/business_ico4.png" alt="">
+							</span>
+							<span class="subject">품질검증</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="prcenter">
+				<div class="inner">
+					<div class="prcenter_tit">홍보센터</div>
+					<ul class="prcenterBox">
+						<li>
+							<h3 class="news_tit">셀트리온뉴스</h3>
+							<a href="" class="prcentermore">더보기 ></a>
+							<img src="./img/newsimage.jpg" alt="" class="news">
+							<dl class="pr_conBox">
+								<dt><a href="#" class="pr_contit">셀트리온, FDA 최종 실사 보고서(EIR)</a></dt>
+								<dd><a href="#" class="pr_coninfo">수령(발행일 : 2018년 9월 13일)함으로써 워닝 레터(Warning Letter) 관련 이슈가 해소되었다고 밝혔다.글로벌 수출 물량이 지속적으로 증가함에 따라, 추가 생산 물량에 대해서는 해외 소재 대형 CMO....</a></dd>
+							</dl>
+						</li>
+						<li>
+							<h3 class="news_tit">디지털브로슈어</h3>
+							<a href="" class="prcentermore">더보기 ></a>
+							<img src="./img/newsimage2.jpg" alt="" class="digital">
+							<dl class="pr_conBox">
+								<dt><a href="#" class="pr_contit">셀트리온 브로슈어(국문)</a></dt>
+								<dd><a href="#" class="pr_coninfo">뛰어난 기술력과 혁신적인 아이디어를 바탕으로, 세계최초 항체 바이오시밀러 개발에 성공하여 바이오의약품 시장의 패러다임을 변화시키고 전 세계 바이오시밀러 시장을 선도하고 있습니다.</a></dd>
+							</dl>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+		</main>
+		<footer id="footer">
+			<div class="fnb">
+				<ul class="inner">
+					<li><a href="#" class="wd0">법적고지</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">수출입경영방침</a></li>
+					<li><a href="#">내부정보관리규정</a></li>
+					<li><a href="#">오시는 길</a></li>
+				</ul>
+			</div>
+			<div class="adress">
+				<div class="inner">
+					<h1 class="logo">
+						<img src="./img/logo2.png" alt="">
+					</h1>
+					<div class="adress_wrap">
+						<p>인천광역시 연수구 아카데미로 23 전화 032-850-5000 Copyright© 2015 Celltrion Inc. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+		
+		
+	</div>
+</body>
+<script>
+	let current = 1990; // 현재 숫자
+	// 콜백 함수를 익명 함수로 일일이 작성하기 귀찮으니 따로 빼주자.
+	// 돔에 숫자를 렌더링하는 함수이다.
+	// 외부에 있는 변수를 건드리므로 좋지는 않지만 어쩔 수 없다.
+	const changeNum = (dom) => dom.innerText = ++current;
+	// setTimeout 말고 setInterval이 더 간결하다.
+	const SetInterval = (cb, ms) => setInterval(() => {
+	  if(current >= 2018) return clearInterval(SetInterval);
+	  cb();
+	}, ms);
+	const MS = 200;
+	const domRoot = document.getElementById('root');
+	domRoot.innerText = 1990; // 0으로 초기값 설정.
+	// 이 함수를 실행할 때는 current가 1이 되므로 계속해서 1로 고정하게 된다.  
+	// 그래서 부득이하게 콜백 함수 안에서 외부 변수를 불러오게 했다.
+	SetInterval(changeNum.bind(null, domRoot), MS);	
+</script>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>셀트리온에오신것을환영합니다^^</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<header id="header">
+			<nav class="gnb inner">
+				<a href="index.html" class="logo">
+					<img src="./img/logo.png" alt="셀트리온">
+				</a>
+				<ul class="gnb_wrap">
+					<li class="m1">
+						<a href="about.html">
+						회사소개
+						</a>
+					</li>
+					<li class="m2">
+						<a href="bio.html">
+						바이오
+						</a>
+					</li>
+					<li class="m3">
+						<a href="products.html">
+						제품소개
+						</a>
+					</li>
+					<li class="m4">
+						<a href="rnd.html">
+						r&amp;d
+						</a>
+					</li>
+					<li class="m5">
+						<a href="ir.html">
+						ir
+						</a>
+					</li>
+					<li class="m6">
+						<a href="recruit.html">
+						인재채용
+						</a>
+						
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main id="contents">
+			<div class="subBg">
+				<img src="./img/subBg.png" alt="" width="100%">
+			</div>
+			<div class="subCon">
+				<div class="inner">
+					<h3 class="subCon_tit">경영철학</h3>
+					<p class="subCon_info"><strong>‘가능성’</strong>을 <strong>‘가능’</strong>으로 만드는 기업 <strong>셀트리온</strong></p>
+					<img src="./img/aboutUs1.png" alt="" class="aboutUsimg">
+					<ul class="mission">
+						<li><span class="mission_title">MISSION</span></li>
+						<li><span class="mission_title">VISSION</span></li>
+						<li><span class="mission_title">VALUE</span></li>
+					</ul>			
+				</div>
+			</div>
+		</main>
+		<footer id="footer">
+			<div class="fnb">
+				<ul class="inner">
+					<li><a href="#" class="wd0">법적고지</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">수출입경영방침</a></li>
+					<li><a href="#">내부정보관리규정</a></li>
+					<li><a href="#">오시는 길</a></li>
+				</ul>
+			</div>
+			<div class="adress">
+				<div class="inner">
+					<h1 class="logo">
+						<img src="./img/logo2.png" alt="">
+					</h1>
+					<div class="adress_wrap">
+						<p>인천광역시 연수구 아카데미로 23 전화 032-850-5000 Copyright© 2015 Celltrion Inc. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+		
+		
+	</div>
+</body>
+<script>
+	let current = 1990; // 현재 숫자
+	// 콜백 함수를 익명 함수로 일일이 작성하기 귀찮으니 따로 빼주자.
+	// 돔에 숫자를 렌더링하는 함수이다.
+	// 외부에 있는 변수를 건드리므로 좋지는 않지만 어쩔 수 없다.
+	const changeNum = (dom) => dom.innerText = ++current;
+	// setTimeout 말고 setInterval이 더 간결하다.
+	const SetInterval = (cb, ms) => setInterval(() => {
+	  if(current >= 2018) return clearInterval(SetInterval);
+	  cb();
+	}, ms);
+	const MS = 200;
+	const domRoot = document.getElementById('root');
+	domRoot.innerText = 1990; // 0으로 초기값 설정.
+	// 이 함수를 실행할 때는 current가 1이 되므로 계속해서 1로 고정하게 된다.  
+	// 그래서 부득이하게 콜백 함수 안에서 외부 변수를 불러오게 했다.
+	SetInterval(changeNum.bind(null, domRoot), MS);	
+</script>
+</html>
